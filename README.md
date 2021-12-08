@@ -28,15 +28,15 @@ Related issues on monday's dev community board:
 ## Initial Setup
 
 You'll need a version of Python 3.x (I'm running 3.10), and likely virtualenv.
-You should ideally create a virtualenv and populate it with the project requirements, e.g.:
+You should ideally create a virtualenv and populate it with the project dependencies, e.g.:
 
 ```
-python -m virtualenv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+virtualenv .venv \
+ && source .venv/bin/activate \
+ && pip install -r requirements.txt
 ```
 
-You can then run `main.py`, which will by output help documentation if it's run without
+You can then run `main.py`, which will output help documentation if it's run without
 arguments.
 
 ## Usage
