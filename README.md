@@ -7,7 +7,7 @@ board.
 ## IMPORTANT: Currently Not Functioning
 
 Currently monday's API doesn't allow you to update time-tracking columns
-specifically, so the above will fail with the following error:
+specifically, so the script will fail with the following error:
 
 ```json
 {
@@ -46,9 +46,9 @@ the full time interval that you want reported (greater than two weeks in the pas
 a paid account), then export the tracked time as a CSV.
 
 In Monday.com, go to the board for which you want to track time, then click the row with
-a time tracking column in it. Make note of the integer after `/boards/`, which will be
-the board ID, and the integer after `/pulses/`, which will be the task ID of the task you
-want to populate with time.
+a time tracking column in it. In the URL, make note of the integer after `/boards/`, which
+will be the board ID, and the integer after `/pulses/`, which will be the task ID of the
+task you want to populate with time.
 
 Run `main.py` with the following arguments:
 
